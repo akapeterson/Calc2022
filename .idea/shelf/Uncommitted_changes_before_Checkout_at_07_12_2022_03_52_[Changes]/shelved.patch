@@ -1,0 +1,68 @@
+Index: src/main/java/ie/atu/Calc.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ie.atu;\r\n\r\npublic class Calc {\r\n    public static void main(String[] args) {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/ie/atu/Calc.java b/src/main/java/ie/atu/Calc.java
+--- a/src/main/java/ie/atu/Calc.java	(revision 1c65e1d467b15211c21df95d92e4229efd4e9a71)
++++ b/src/main/java/ie/atu/Calc.java	(date 1670384989748)
+@@ -1,7 +1,20 @@
+ package ie.atu;
+ 
++import java.util.Scanner;
++
+ public class Calc {
+     public static void main(String[] args) {
++        add();
++    }
++    public static void add(){
++        System.out.println("Please add your first number: ");
++        Scanner inputs = new Scanner(System.in);
++        int firstNumber = inputs.nextInt();
+ 
++        System.out.println("Please add your Second number: ");
++        int secondNumber = inputs.nextInt();
++
++        int total = firstNumber + secondNumber;
++        System.out.println("The Total is: " + total);
+     }
+ }
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1670381643793)
++++ b/.idea/.gitignore	(date 1670381643793)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1670381720857)
++++ b/.idea/compiler.xml	(date 1670381720857)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="Practice" />
++      </profile>
++    </annotationProcessing>
++  </component>
++</project>
+\ No newline at end of file
