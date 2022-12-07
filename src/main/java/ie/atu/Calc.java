@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class Calc {
     public static void main(String[] args) {
+        delete();
         add();
+    }
+    public static void delete(){
+
     }
     public static void add(){
         System.out.println("Please add your first number: ");
